@@ -8,8 +8,8 @@
 
 Bike.destroy_all
 
-Bike.create(name:"Cervelo", price:3000, discription:[], condition:"Used-like new", type:"Road" size:51)
-Bike.create(name:"Specialized Venge", price:3400, discription:[], condition:"Used-like new", size:54)
-Bike.create(name:"BMC", price:2800, discription:[], condition:"Used-fair", size:51)
-Bike.create(name:"Specialized", price:2000, discription:[], condition:"Used-like new", size:56)
-Bike.create(name:"Giant", price:2300, discription:[], condition:"Used-fair", size:53)
+Bike.create(name:"Cervelo", price:3000, discription:[], condition:"Used-like new", bike_type:"Road", size:51)
+Bike.create(name:"Specialized Venge", price:3400, discription:[], condition:"Used-like new", bike_type:"Road", size:54)
+Bike.create(name:"BMC", price:2800, discription:[], condition:"Used-fair", bike_type:"Road", size:51)
+Bike.create(name:"Specialized", price:2000, discription:[], condition:"Used-like new", bike_type:"Road", size:56)
+Bike.create(name:"Giant", price:2300, discription:[], condition:"Used-fair", bike_type:"Road", size:53)
