@@ -7,7 +7,7 @@ class BikesController < ApplicationController
     begin
       @bike = Bike.find(params[:id])
     rescue
-      render plain: "No match found!"
+      render plain: 'No match found!'
     end
   end 
 end

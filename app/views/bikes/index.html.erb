@@ -1,4 +1,4 @@
 <h1>Welcome to StokedSpokes!</h1>
 <% @bikes.each do |bike| %>
-  <P><%= bike.name %></P>
+  <P><%= link_to bike.name, bike %> $<%= bike.price %></P>
 <% end %>
