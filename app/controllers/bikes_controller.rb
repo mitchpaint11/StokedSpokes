@@ -10,8 +10,12 @@ class BikesController < ApplicationController
     def show
     end
 
-  def create
-    bike = Bike.create(bike_params)
+    def new
+      @bike = Bike.new
+    end 
+
+  def create 
+    bike = Bike.create!(bike_params)
     redirect_to bike
   end
 
@@ -32,6 +36,6 @@ class BikesController < ApplicationController
   end 
 
   def bike_params
-    return params.permit(:name, :brand_id)
+    return params.require(:bike).permit(:name, :brand_id, :price, :discription, :condition, :bike_type, :size)
   end
 end
