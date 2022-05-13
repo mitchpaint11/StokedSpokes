@@ -8,7 +8,7 @@
 
 
 Brand.destroy_all
-Material.destroy_all
+# Material.destroy_all
 
 carbon = Material.create(material_name: "Carbon")
 alloy = Material.create(material_name: "Alloy")
@@ -25,3 +25,6 @@ specialized.bikes.create(name:"Specialized Venge", price:3400, discription:" ", 
 bianchi.bikes.create(name:"Bianchi", price:1100, discription:" ", condition:"Used-fair", bike_type:"Commuter", size:51,)
 trek.bikes.create(name:"Trek", price:2500, discription:" ", condition:"Used-like new", bike_type:"MTB", size:56,)
 giant.bikes.create(name:"Giant", price:2000, discription:" ", condition:"Used-fair", bike_type:"MTB", size:53,)
+
+puts "Brands: #{Brand.count}"
+puts "Bikes: #{Bike.count}"

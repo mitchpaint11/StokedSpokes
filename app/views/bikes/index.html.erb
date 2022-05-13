@@ -1,4 +1,8 @@
-<h1>Welcome to StokedSpokes!</h1>
+<h1>
+  Welcome to StokedSpokes!
+  <%= link_to 'Add New Bike', bikes_new_path, class: "btn btn-dark" %>
+</h1>
+
 <% @bikes.each do |bike| %>
   <P><%= link_to bike.name, bike %> $<%= bike.price %></P>
   <p>Discription: <%= bike.discription %></p>
