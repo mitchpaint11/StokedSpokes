@@ -1,0 +1,38 @@
+<%= form_with(model: @bike, data: {turbo: false}) do |f| %>
+  <fieldset class = "mb-2">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </fieldset>
+  <fieldset class = "mb-2">
+    <%= f.label :price %>
+    <%= f.number_field :price %>
+  </fieldset>
+  <fieldset class = "mb-2">
+    <%= f.label :brand_id %>
+    <%= f.collection_select :brand_id, @brands, :id, :brand_name %>
+  </fieldset>
+  <fieldset class = "mb-2">
+    <%= f.label :condition %>
+    <%= f.text_field :condition %>
+  </fieldset>
+  <fieldset class = "mb-2">
+    <%= f.label :bike_type %>
+    <%= f.text_field :bike_type %>
+  </fieldset>
+  <fieldset class = "mb-2">
+    <%= f.label :size %>
+    <%= f.text_field :size %>
+  </fieldset>
+  <fieldset class = "mb-2">
+    <%= f.label :discription %>
+    <%= f.text_field :discription %>
+    <%# <textarea class="form-control" id="discription" rows="3"></textarea> %>
+  </fieldset>
+  <fieldset class = "mb-2">
+    <%= f.label :material_id %>
+    <%= f.collection_select :material_id, @materials, :id, :material_name %>
+  </fieldset>
+  <fieldset class = "mb-2">
+    <%= f.submit %>
+  </fieldset>
+<% end %>
