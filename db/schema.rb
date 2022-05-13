@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_05_11_004917) do
+ActiveRecord::Schema[7.0].define(version: 2022_05_13_063107) do
   create_table "bike_materials", force: :cascade do |t|
     t.integer "bike_id", null: false
     t.integer "material_id", null: false
@@ -51,6 +51,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_11_004917) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "bike_materials", "bikes"
