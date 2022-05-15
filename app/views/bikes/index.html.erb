@@ -1,6 +1,6 @@
 <h1>
   Welcome to StokedSpokes!
-  <%= link_to 'Add New Bike', bikes_new_path, class: "btn btn-dark" %>
+  <%= user_signed_in? && policy(Bike).new? ? link_to('Add New Bike', bikes_new_path, class: "btn btn-dark") : '' %>
 </h1>
 
 <% @bikes.each do |bike| %>

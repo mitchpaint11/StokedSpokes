@@ -1,9 +1,11 @@
 class BikesController < ApplicationController
   #DEBUG - REMOVE FOR PRODUCTION!!!
-  skip_before_action :verify_authenticity_token
+  # skip_before_action :verify_authenticity_token
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :check_auth
   before_action :find_bike, only: [:show, :update, :destroy, :edit]
   before_action :find_brands, only: [:new, :edit]
-  before_action :find_materials, only: [:new, :edit]
+  before_action :find_materials, only: [:new, :edit, :show]
 
     def index
         @bikes = Bike.all
@@ -35,6 +37,10 @@ class BikesController < ApplicationController
   end 
 
   private
+
+  def check_auth
+    authorize Bike
+  end
 
   def find_bike
     @bike = Bike.find(params[:id])

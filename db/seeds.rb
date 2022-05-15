@@ -6,9 +6,14 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-
+User.destroy_all
 Brand.destroy_all
-# Material.destroy_all
+
+user = User.create(email: 'seller@bikes.com', password: 'seller')
+user.add_role :admin
+
+buyer = User.create(email: 'buyer@bikes.com', password: '111111')
+buyer.add_role :buyer
 
 carbon = Material.create(material_name: "Carbon")
 alloy = Material.create(material_name: "Alloy")
@@ -26,5 +31,7 @@ bianchi.bikes.create(name:"Bianchi", price:1100, discription:" ", condition:"Use
 trek.bikes.create(name:"Trek", price:2500, discription:" ", condition:"Used-like new", bike_type:"MTB", size:56,)
 giant.bikes.create(name:"Giant", price:2000, discription:" ", condition:"Used-fair", bike_type:"MTB", size:53,)
 
+puts "Users: #{User.count}"
+puts "Roles: #{Role.count}"
 puts "Brands: #{Brand.count}"
 puts "Bikes: #{Bike.count}"
