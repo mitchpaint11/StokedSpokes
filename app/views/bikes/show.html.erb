@@ -1,5 +1,5 @@
 <h1><%= @bike.name %></h1>
-<%= cl_image_tag(@bike.image.key, crop: :scale, width: 700, cloud_name: 'mitchpaint11') if @bike.image.attached? %>
+<%= cl_image_tag(@bike.image.key, crop: :scale, width: 700, cloud_name: ENV['CLOUDINARY_CLOUD_NAME']) if @bike.image.attached? %>
 <h5>$<%= @bike.price %></h5>
 <h5>Brand: <%= @bike.brand.brand_name %></h5>
 <h5>Condition: <%= @bike.condition %></h5>
