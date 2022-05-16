@@ -32,6 +32,7 @@ class BikesController < ApplicationController
   end
 
   def destroy
+    # @bike.image.purge
     @bike.destroy
     redirect_to bikes_path
   end 
@@ -55,6 +56,6 @@ class BikesController < ApplicationController
   end
 
   def bike_params
-    return params.require(:bike).permit(:name, :brand_id, :price, :discription, :condition, :bike_type, :size)
+    return params.require(:bike).permit(:name, :brand_id, :price, :discription, :condition, :bike_type, :size, :image)
   end
 end

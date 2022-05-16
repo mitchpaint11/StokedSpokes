@@ -32,6 +32,15 @@
     <%= f.label :material_id %>
     <%= f.collection_select :material_id, @materials, :id, :material_name %>
   </fieldset>
+  <% if @bike.image.attached? %>
+    <fieldset class = "mb-2">
+      <%= cl_image_tag @bike.image.key, transformation: ["media_lib_thumb"], cloud_name: 'mitchpaint11' %>
+    </fieldset>
+  <% end %>
+  <fieldset class = "mb-2">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </fieldset>
   <fieldset class = "mb-2">
     <%= f.submit class: 'btn btn-dark' %>
   </fieldset>
