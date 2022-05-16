@@ -18,7 +18,7 @@ class BikePolicy
   end
 
   def create?
-    return @user.has_role? :admin
+    return @user && @user.has_role?(:admin)
   end
 
   def new?
@@ -26,7 +26,7 @@ class BikePolicy
   end
 
   def update?
-    return @user.has_role? :admin
+    return @user && @user.has_role?(:admin)
   end
 
   def edit?
@@ -34,8 +34,12 @@ class BikePolicy
   end
 
   def destroy?
-    return @user.has_role? :admin
+    create?
   end
+
+  def edit_or_destroy?
+    return @user && (edit? || destroy?)
+  end 
 
   class Scope
     def initialize(user, scope)
