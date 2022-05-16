@@ -4,8 +4,8 @@ class BikesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :check_auth
   before_action :find_bike, only: [:show, :update, :destroy, :edit]
-  before_action :find_brands, only: [:new, :edit]
-  before_action :find_materials, only: [:new, :edit, :show]
+  before_action :find_brands, only: [:new, :edit, :create, :update]
+  before_action :find_materials, only: [:new, :edit, :create, :update]
 
     def index
         @bikes = Bike.all
@@ -18,17 +18,28 @@ class BikesController < ApplicationController
       @bike = Bike.new 
     end 
 
-  def create 
-    bike = Bike.create!(bike_params)
-    redirect_to bike
+  def create
+    begin
+      @bike = Bike.new(bike_params)
+      @bike.save!
+      redirect_to @bike
+    rescue
+      flash.now[:alert] = @bike.errors.full_messages.join('<br>').html_safe
+      render 'new'
+    end 
   end
 
   def edit
   end
 
   def update
-    @bike.update(bike_params)
-    redirect_to @bike
+    begin
+      @bike.update!(bike_params)
+      redirect_to @bike
+    rescue
+      flash.now[:alert] = @bike.errors.full_messages.join('<br>')
+      render 'edit'
+    end
   end
 
   def destroy
