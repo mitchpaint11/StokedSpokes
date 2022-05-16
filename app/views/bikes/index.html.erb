@@ -1,7 +1,7 @@
-<h1>
-  Welcome to StokedSpokes!
+<h3>
+  Would you like to sell your bike?
   <%= user_signed_in? && policy(Bike).new? ? link_to('Add New Bike', bikes_new_path, class: "btn btn-dark") : '' %>
-</h1>
+</h3>
 
 <% @bikes.each do |bike| %>
   <P><%= link_to bike.name, bike %> $<%= bike.price %></P>
