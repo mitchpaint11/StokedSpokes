@@ -8,7 +8,7 @@ class BikesController < ApplicationController
   before_action :find_materials, only: [:new, :edit, :create, :update]
 
     def index
-        @bikes = Bike.all
+        @bikes = Bike.order(:name)
     end
 
     def show
