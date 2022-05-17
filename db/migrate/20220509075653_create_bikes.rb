@@ -5,7 +5,7 @@ class CreateBikes < ActiveRecord::Migration[7.0]
       t.integer :price
       t.text :discription
       t.string :condition
-      t.string :type
+      t.string :bike_type
       t.integer :size
 
       t.timestamps
