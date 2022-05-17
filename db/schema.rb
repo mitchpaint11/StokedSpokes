@@ -55,7 +55,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_15_232723) do
     t.string "condition"
     t.string "bike_type"
     t.integer "size"
-    t.string "string"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "brand_id", null: false
