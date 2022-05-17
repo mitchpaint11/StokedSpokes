@@ -1,5 +1,5 @@
 <h3>
-  Would you like to sell your bike?
+  Welcome to StokedSpokes!
   <%= user_signed_in? && policy(Bike).new? ? link_to('Add New Bike', bikes_new_path, class: "btn btn-dark") : '' %>
 </h3>
 
