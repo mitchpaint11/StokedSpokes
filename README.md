@@ -1,24 +1,31 @@
-# README
+# StokedSpokes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### R7
 
-Things you may want to cover:
+#### R8
 
-* Ruby version
+#### R9
+https://desolate-mountain-51945.herokuapp.com/
 
-* System dependencies
+#### R10
+https://github.com/mitchpaint11/stokedspokes
 
-* Configuration
+#### R11
+![Sitemap](app/assets/images/StokedSpokes-Sitemap.png "Sitemap")
+#### R12
 
-* Database creation
+#### R13
 
-* Database initialization
+#### R14
 
-* How to run the test suite
+#### R15
 
-* Services (job queues, cache servers, search engines, etc.)
+#### R16
 
-* Deployment instructions
+#### R17
 
-* ...
+#### R18
+
+#### R19
+
+#### R20
