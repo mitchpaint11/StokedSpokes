@@ -11,7 +11,7 @@ https://desolate-mountain-51945.herokuapp.com/
 https://github.com/mitchpaint11/stokedspokes
 
 #### R11
-<img src="app/assets/images/StokedSpokes-Sitemap.png" alt="SiteMap" width="400"/>
+<img src="app/assets/images/StokedSpokes-Sitemap.png" alt="SiteMap" width="700"/>
 
 
 #### R12
