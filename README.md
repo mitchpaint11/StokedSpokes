@@ -7,9 +7,11 @@
 #### R8
 
 #### R9
+#### Deployed App Link:
 https://desolate-mountain-51945.herokuapp.com/
 
 #### R10
+#### GitHub Repository:
 https://github.com/mitchpaint11/stokedspokes
 
 #### R11
@@ -25,25 +27,25 @@ This marketplace app has been built for the purpose of buying and selling used b
 <img src="app/assets/images/Index.png" alt="Index" width="700"/>
 
 #### Show:
-<img src="app/assets/images/Show.png" alt="SiteMap" width="700"/>
+<img src="app/assets/images/Show.png" alt="Show" width="700"/>
 
 #### Signup:
-<img src="app/assets/images/Signup.png" alt="SiteMap" width="700"/>
+<img src="app/assets/images/Signup.png" alt="Signup" width="700"/>
 
 #### Login:
-<img src="app/assets/images/Login.png" alt="SiteMap" width="700"/>
+<img src="app/assets/images/Login.png" alt="Login" width="700"/>
 
 #### New:
-<img src="app/assets/images/New.png" alt="SiteMap" width="700"/>
+<img src="app/assets/images/New.png" alt="New" width="700"/>
 
 #### Seller-logged-in:
-<img src="app/assets/images/Seller-logged-in.png" alt="SiteMap" width="700"/>
+<img src="app/assets/images/Seller-logged-in.png" alt="Seller-logged-in" width="700"/>
 
 #### Edit:
-<img src="app/assets/images/Edit.png" alt="SiteMap" width="700"/>
+<img src="app/assets/images/Edit.png" alt="Edit" width="700"/>
 
 #### Iphone New/Show:
-<img src="app/assets/images/Iphone-new.png" alt="SiteMap" width="200"/> <img src="app/assets/images/Iphone-show.png" alt="SiteMap" width="200"/>
+<img src="app/assets/images/Iphone-new.png" alt="Iphone-new" width="200"/> <img src="app/assets/images/Iphone-show.png" alt="Iphone-show" width="200"/>
 
 ### Tech Stack
 -   Ruby
@@ -68,13 +70,21 @@ This marketplace app has been built for the purpose of buying and selling used b
 
 https://trello.com/b/4OCG9ZzS/marketplace-application
 
-<img src="app/assets/images/Userstories.png" alt="SiteMap" width="700"/>
+<img src="app/assets/images/Userstories.png" alt="Userstories" width="700"/>
 
 #### R13
+### Wireframes:
+<img src="app/assets/images/1.png" alt="Wireframe" width="700"/>
+<img src="app/assets/images/2.png" alt="Wireframe" width="700"/>
+<img src="app/assets/images/3.png" alt="Wireframe" width="700"/>
+<img src="app/assets/images/4.png" alt="Wireframe" width="700"/>
+<img src="app/assets/images/5.png" alt="Wireframe" width="700"/>
+<img src="app/assets/images/6.png" alt="Wireframe" width="700"/>
+<img src="app/assets/images/7.png" alt="Wireframe" width="700"/>
 
 #### R14
 ### ERD:
-<img src="app/assets/images/ERD.png" alt="SiteMap" width="700"/>
+<img src="app/assets/images/ERD.png" alt="ERD" width="700"/>
 
 #### R15
 
