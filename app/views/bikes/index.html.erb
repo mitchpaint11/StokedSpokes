@@ -4,6 +4,13 @@
 </h3>
 
 <% @bikes.each do |bike| %>
-  <P><%= link_to bike.name, bike %> $<%= bike.price %></P>
-  <p>Discription: <%= bike.discription %></p>
+<div class="card mt-3" style="width: 18rem;">
+  <img class="card-img-top" src="<%= url_for(bike.image) %>" width = 300px>
+  <div class="card-body">
+    <h5 class="card-title"> $<%= bike.price %></h5>
+    <p class="card-text">Discription: <%= bike.discription %></p>
+    <a> <%= link_to bike.name, bike, class:"btn btn-outline-dark"%></a>
+  </div>
+</div>
+</div>
 <% end %>

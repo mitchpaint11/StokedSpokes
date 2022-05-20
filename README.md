@@ -19,6 +19,8 @@ https://github.com/mitchpaint11/stokedspokes
 ### Discription:
 This marketplace app has been built for the purpose of buying and selling used bicycles. The main goal was to provide an easy and enjoyable to use two-sided marketplace with a simple design and a focus on a strong user experience. It is a two-sided marketplace with a target audience of cyclists and enthusiasts, where the user could be signed up and logged in as either a seller or a buyer. When logged in as a seller, the user is given authorisation and access to the app with the ability to view, add, edit, and delete bikes. Within the add view, a seller has the ability to add a used bike for sale and is given the opportunity to fill out the given fields to provide as much detail as possible for the buyer to make an informed decision. These fields include; Name, Price, Brand, Condition, Bike Type, Size(cm), Material, and Description, with the added benefit of image uploading capabilities, to help display the given bicycle or product. The edit view, allows the seller to access and edit the aforementioned description fields to maintain and provide the most up to date information. When logged in as a buyer, the user is given the authorisation and access to view all bicycles that are on the platform for sale as well as any related descriptive information and pricing details, however, does not have the authorisation to add, edit or delete a bicycle.
 
+There are some features or functionality that could be added to make this app more efficient, however, at this stage of the development process it is kept simple to cover the functionality specifications outlined and still provide an efficient, easy and enjoyable to use application for the world of two-sided marketplaces and the cycling community.
+
 
 ### SiteMap:
 <img src="app/assets/images/StokedSpokes-Sitemap.png" alt="SiteMap" width="700"/>
@@ -89,6 +91,13 @@ https://trello.com/b/4OCG9ZzS/marketplace-application
 <img src="app/assets/images/ERD.png" alt="ERD" width="700"/>
 
 #### R15
+There are six high level components or abstractions that make up this application, and the relationships they have with one another are extremely important. These components consist of many attributes that assist this postrgresql relational database in defining their functions and achieving the desired outcomes. These components, also displayed in the above ERD are as follows,
+
+-   Bike: As bicycles are the main product and focus of this application, the bike model is one the most important. The bike model consists of many attributes such as, user_id, brand_id, name, price, discription, condition, type, size and image, that all assist in controlling how the bicycles information is displayed for the user. The bike model has it's own controller, called bikes_controller, where the CRUD specifics and their required functions and parameters are defined. These include, index, show, new, create, edit, update, destroy, and authorisation checks. 
+  
+-   User: As this is a two-sided marketplace there are two types of users, a seller and a buyer, these users are defined by the attributes outlined in the user model. These attributes include, user_id, name, email, and password. This user model also assists in providing different roles to certain users which in this applications case is a seller or admin role with full authorisation and access to all capabilities, and the buyer role, with access to the index and show views with limited capabilities.
+
+-   Brand: In order to assist in the simplicity and ease of use, brand was implemented as its own model to assist in providing and displaying bicycle brands for the user to choose from in the add new bike form as a drop down options tab. Brand consists of the bike_id and brand_name attributes
 
 #### R16
 
