@@ -19,45 +19,44 @@ https://github.com/mitchpaint11/stokedspokes
 ### Discription:
 This marketplace app has been built for the purpose of buying and selling used bicycles. The main goal was to provide an easy and enjoyable to use two-sided marketplace with a simple design and a focus on a strong user experience. It is a two-sided marketplace with a target audience of cyclists and enthusiasts, where the user could be signed up and logged in as either a seller or a buyer. When logged in as a seller, the user is given authorisation and access to the app with the ability to view, add, edit, and delete bikes. Within the add view, a seller has the ability to add a used bike for sale and is given the opportunity to fill out the given fields to provide as much detail as possible for the buyer to make an informed decision. These fields include; Name, Price, Brand, Condition, Bike Type, Size(cm), Material, and Description, with the added benefit of image uploading capabilities, to help display the given bicycle or product. The edit view, allows the seller to access and edit the aforementioned description fields to maintain and provide the most up to date information. When logged in as a buyer, the user is given the authorisation and access to view all bicycles that are on the platform for sale as well as any related descriptive information and pricing details, however, does not have the authorisation to add, edit or delete a bicycle.
 
-There are some features or functionality that could be added to make this app more efficient, however, at this stage of the development process, it is kept simple to cover the functionality specifications outlined and still provide an efficient, easy and enjoyable to use application for the world of two-sided marketplaces and the cycling community
+There are some features or functionality that could be added to make this app more efficient, however, at this stage of the development process, it is kept simple to cover the functionality specifications outlined and still provide an efficient, easy and enjoyable to use application for the world of two-sided marketplaces and the cycling community.
 
 
 ### SiteMap:
-<img src="app/assets/images/StokedSpokes-Sitemap.png" alt="SiteMap" width="700"/>
+<img src="docs/images/StokedSpokes-Sitemap.png" alt="SiteMap" width="700"/>
 
 ### ScreenShots:
 
 #### Index:
-<img src="app/assets/images/Index.png" alt="Index" width="700"/>
+<img src="docs/images/Index.png" alt="Index" width="700"/>
 
 #### Show:
-<img src="app/assets/images/Show.png" alt="Show" width="700"/>
+<img src="docs/images/Show.png" alt="Show" width="700"/>
 
 #### Signup:
-<img src="app/assets/images/Signup.png" alt="Signup" width="700"/>
+<img src="docs/images/Signup.png" alt="Signup" width="700"/>
 
 #### Login:
-<img src="app/assets/images/Login.png" alt="Login" width="700"/>
+<img src="docs/images/Login.png" alt="Login" width="700"/>
 
 #### New:
-<img src="app/assets/images/New.png" alt="New" width="700"/>
+<img src="docs/images/New.png" alt="New" width="700"/>
 
 #### Seller-logged-in:
-<img src="app/assets/images/Seller-logged-in.png" alt="Seller-logged-in" width="700"/>
+<img src="docs/images/Seller-logged-in.png" alt="Seller-logged-in" width="700"/>
 
 #### Edit:
-<img src="app/assets/images/Edit.png" alt="Edit" width="700"/>
+<img src="docs/images/Edit.png" alt="Edit" width="700"/>
 
 #### Iphone New/Show:
-<img src="app/assets/images/Iphone-new.png" alt="Iphone-new" width="200"/> <img src="app/assets/images/Iphone-show.png" alt="Iphone-show" width="200"/>
+<img src="docs/images/Iphone-new.png" alt="Iphone-new" width="200"/> <img src="docs/images/Iphone-show.png" alt="Iphone-show" width="200"/>
 
 ### Tech Stack
--   Ruby
 -   Ruby on Rails
 -   CSS - Bootstrap
 -   HTML
--   JavaScript
 -   Deployment: Heroku
+-   Database: PostgreSQL
 
 #### R12
 ### User Stories!
@@ -74,21 +73,21 @@ There are some features or functionality that could be added to make this app mo
 
 [Trello/UserStories](https://trello.com/b/4OCG9ZzS/marketplace-application).
 
-<img src="app/assets/images/Userstories.png" alt="Userstories" width="700"/>
+<img src="docs/images/Userstories.png" alt="Userstories" width="700"/>
 
 #### R13
 ### Wireframes:
-<img src="app/assets/images/1.png" alt="Wireframe" width="700"/>
-<img src="app/assets/images/2.png" alt="Wireframe" width="700"/>
-<img src="app/assets/images/3.png" alt="Wireframe" width="700"/>
-<img src="app/assets/images/4.png" alt="Wireframe" width="700"/>
-<img src="app/assets/images/5.png" alt="Wireframe" width="700"/>
-<img src="app/assets/images/6.png" alt="Wireframe" width="700"/>
-<img src="app/assets/images/7.png" alt="Wireframe" width="700"/>
+<img src="docs/images/1.png" alt="Wireframe" width="700"/>
+<img src="docs/images/2.png" alt="Wireframe" width="700"/>
+<img src="docs/images/3.png" alt="Wireframe" width="700"/>
+<img src="docs/images/4.png" alt="Wireframe" width="700"/>
+<img src="docs/images/5.png" alt="Wireframe" width="700"/>
+<img src="docs/images/6.png" alt="Wireframe" width="700"/>
+<img src="docs/images/7.png" alt="Wireframe" width="700"/>
 
 #### R14
 ### ERD:
-<img src="app/assets/images/ERD.png" alt="ERD" width="700"/>
+<img src="docs/images/ERD.png" alt="ERD" width="700"/>
 
 #### R15
 There are six high-level components or abstractions that make up this application, and the relationships they have with one another are extremely important. These components consist of many attributes that assist this PostgreSQL relational database in defining its functions and achieving the desired outcomes. These components are as follows,
