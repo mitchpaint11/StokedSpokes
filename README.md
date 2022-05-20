@@ -110,11 +110,15 @@ When it comes to this applications models in terms of the relationships and acti
 
 -   Brand has_many bikes, this means that for each specified brand there could be multiple bikes listed within the application that fall under the same brand_id. However, one bike can only have one brand, hense why, as stated above "bike belongs_to_brand".
 
--   
+-   Bike_material belongs_to bike, this means that any given bike_material belongs to the bike that is specified as far as active record is concerned, there can be many bikes and there can be many bike materials, however, bike_material belongs_to bike. Bike_material also belongs_to material meaning that bike_material is used as join table for active record to join material with bike, a join table is used due to the many_to_many relationship that is present between bike and material.
+
+-   Material has_many bike_materials and has_many bikes, through bike_materials. This means that for each specified material there could be multiple bike_materials listed within the application that fall under the same material_id.
 
 
 #### R18
 
-#### R19
+
+
+
 
 #### R20
