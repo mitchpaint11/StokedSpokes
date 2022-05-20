@@ -28,7 +28,7 @@ There are some features or functionality that could be added to make this app mo
 ### ScreenShots:
 
 #### Index:
-<img src="app/assets/images/index.png" alt="Index" width="700"/>
+<img src="app/assets/images/Index.png" alt="Index" width="700"/>
 
 #### Show:
 <img src="app/assets/images/Show.png" alt="Show" width="700"/>
@@ -49,7 +49,7 @@ There are some features or functionality that could be added to make this app mo
 <img src="app/assets/images/Edit.png" alt="Edit" width="700"/>
 
 #### Iphone New/Show:
-<img src="app/assets/images/Iphone-new.png" alt="Iphone-new" width="200"/> <img src="app/assets/images/iphone-show.png" alt="Iphone-show" width="200"/>
+<img src="app/assets/images/Iphone-new.png" alt="Iphone-new" width="200"/> <img src="app/assets/images/Iphone-show.png" alt="Iphone-show" width="200"/>
 
 ### Tech Stack
 -   Ruby
