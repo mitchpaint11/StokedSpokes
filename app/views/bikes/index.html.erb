@@ -5,7 +5,7 @@
 
 <% @bikes.each do |bike| %>
 <div class="card mt-3" style="width: 18rem;">
-  <img class="card-img-top" src="<%= url_for(bike.image) %>" width = 300px>
+  <img class="card-img-top" src="<%= url_for(bike.image) %>">
   <div class="card-body">
     <h5 class="card-title"> $<%= bike.price %></h5>
     <p class="card-text">Discription: <%= bike.discription %></p>
